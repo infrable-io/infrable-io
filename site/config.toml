@@ -1,3 +1,5 @@
 baseURL = "https://infrable.io"
 languageCode = 'en-us'
 title = 'Infrable.io'
+
+theme = "infrable-io"
