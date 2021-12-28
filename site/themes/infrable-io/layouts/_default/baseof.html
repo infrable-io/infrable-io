@@ -11,10 +11,12 @@
 
   <!-- CSS-->
   {{ if .Site.IsServer }}
-  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
+  {{ $sassTemplate := resources.Get "scss/style.scss" }}
+  {{ $style := $sassTemplate | resources.ExecuteAsTemplate "style.scss" . | resources.ToCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
   <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
   {{ else }}
-  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" false) }}
+  {{ $sassTemplate := resources.Get "scss/style.scss" }}
+  {{ $style := $sassTemplate | resources.ExecuteAsTemplate "style.scss" . | resources.ToCSS (dict "targetPath" "css/style.css" "enableSourceMap" false ) }}
   <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
   {{ end }}
 
