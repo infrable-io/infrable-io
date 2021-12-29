@@ -1,10 +1,10 @@
 // Colors
-$primary: #f24088;
-$secondary: #f88379;
-$black: #2f2f41;
+$primary: #000000;
+$secondary: #8c8c8c;
+$black: #000000;
 $white: #ffffff;
-$white-offset: #f6f7ff;
-$steel: #5C5A5A;
+$white-offset: #ebdbb2;
+$steel: #928374;
 
 // Fonts
 // Google fonts are added in `layouts/partials/google-fonts.html`
@@ -27,7 +27,6 @@ $sub-footer-text-color: $white;
 @import 'bootstrap/bootstrap-reboot';
 @import 'bootstrap/bootstrap-grid';
 // @import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
-
 
 // Libraries
 @import 'libraries/hamburgers/hamburgers';
