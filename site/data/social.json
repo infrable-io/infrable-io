@@ -1,0 +1,12 @@
+[
+    {
+        "name": "GitHub",
+        "link": "https://github.com/infrable-io",
+        "image": "images/social/default.png"
+    },
+    {
+        "name": "Twitter",
+        "link": "https://twitter.com/infrable_io",
+        "image": "images/social/default.png"
+    }
+]
