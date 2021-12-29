@@ -34,8 +34,16 @@ theme = "infrable-io"
     alt = "Infrable.io - Your Infrastructure As Code"
 
   [params.seo]
-    meta_twitter_site = "@infrable_io"
+    meta_description = "Your Infrastructure As Code"
+    meta_og_description = "Your Infrastructure As Code"
+    meta_og_image = ""
+    meta_og_site_name = "Infrable.io"
+    meta_og_title = "Infrable.io - Your Infrastructure As Code"
     meta_twitter_creator = "@infrable_io"
+    meta_twitter_description = "Your Infrastructure As Code"
+    meta_twitter_image = ""
+    meta_twitter_site = "@infrable_io"
+    meta_twitter_title = "Infrable.io - Your Infrastructure As Code"
 
   [params.team]
     summary_large_truncate = 120
