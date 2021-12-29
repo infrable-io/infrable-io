@@ -6,3 +6,4 @@
 - [ ] Add default image to `images/team/default.png`
 - [ ] Remove superfluous `.gitkeep` files
 - [ ] Configure Google Analytics
+- [ ] Update favicon (`images/favicon.png`)
