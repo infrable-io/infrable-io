@@ -1,8 +1,24 @@
+<!--
+  summary.html
+
+  A generated summary of the content for easily showing a snippet in a summary
+  view. The breakpoint can be set manually by inserting 'more' as a comment at
+  the appropriate place in the content page, or the summary can be written
+  independent of the page text as is done here.
+
+  Hugo passes the entire page object to the summary.html view template.
+
+  To use this template add a 'description' to the content front matter.
+
+  Documentation:
+    * https://gohugo.io/content-management/summaries
+    * https://gohugo.io/variables/page
+-->
 <div class="service service-summary">
   <div class="service-content">
     <h2 class="service-title">
       <a href="{{ .Permalink }}">{{ .Title }}</a>
     </h2>
-    <p>{{ .Content | plainify | htmlUnescape | truncate 120 "…" }}</p>
+    <p>{{ .Description | plainify | htmlUnescape }}</p>
   </div>
 </div>
