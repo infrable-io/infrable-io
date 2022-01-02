@@ -1,32 +1,59 @@
+// Style for page introduction image.
+
 .intro-image {
   width: 100%;
   height: auto;
   margin-top: -40px;
 }
+
+// NOTE: The `position` property specifies the type of positioning method used
+// for an element (static, relative, absolute, fixed, or sticky).
+//
+//   * absolute: The element is positioned relative to its first positioned
+//               (not static) ancestor element.
 .intro-image-absolute {
   max-width: none;
-
   padding: 0;
   margin-bottom: 30px;
-  @include media-breakpoint-up(sm) {
-  }
+
+  // NOTE: Breakpoints are customizable widths that determine how your
+  // responsive layout behaves across device or viewport sizes in Bootstrap.
+  //
+  // See the Bootstrap documentation for details:
+  //   * https://getbootstrap.com/docs/5.0/layout/breakpoints
+
+  // sm: small devices (landscape phones, 576px and up)
+  @include media-breakpoint-up(sm) {}
+
+  // md: medium devices (tablets, 768px and up)
   @include media-breakpoint-up(md) {
     position: absolute;
-    bottom: -50px;
-    left: -50px;
-    width: 700px;
-  }
-  @include media-breakpoint-up(lg) {
+    top: -45px;
     bottom: -60px;
-    left: -60px;
+    left: -90px;
+    width: 750px;
+  }
+
+  // lg: large devices (desktops, 992px and up)
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    top: -75px;
+    bottom: -70px;
+    left: -110px;
     width: 800px;
   }
+
+  // xl: x-large devices (large desktops, 1200px and up)
   @include media-breakpoint-up(xl) {
-    bottom: -100px;
-    left: -70px;
+    position: absolute;
+    top: -165px;
+    bottom: -80px;
+    left: -120px;
     width: 850px;
   }
 }
+
+// Hide image on mobile
 .intro-image-hide-mobile {
   display: none;
   @include media-breakpoint-up(md) {

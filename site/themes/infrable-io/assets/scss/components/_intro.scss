@@ -1,27 +1,43 @@
+// Style for page introduction.
+
 .intro {
+
+  .container {
+  }
+
+  // NOTE: Add bottom margin in order to provide space for image.
+  .container-absolute {
+    margin-bottom: 150px;
+  }
+
+  align-items: center;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
   overflow: hidden;
+  padding-bottom: 30px;
+  padding-top: 60px;
+
   @include media-breakpoint-up(md) {
     padding-top: 140px;
     padding-bottom: 140px;
   }
+
   h1 {
     color: $black;
     font-size: 42px;
     font-weight: bold;
     line-height: 1.2;
+
     @include media-breakpoint-up(md) {
       width: 80%;
       font-size: 48px;
     }
+
     @include media-breakpoint-up(lg) {
       font-size: 50px;
     }
   }
+
   h2 {
     width: 80%;
     font-size: 1.2rem;
@@ -30,11 +46,13 @@
     color: $black;
     font-family: $font-family-base;
   }
+
   p {
     font-size: 1.2rem;
     font-weight: light;
     line-height: 1.5;
     color: $steel;
+
     @include media-breakpoint-up(md) {
       width: 80%;
     }
