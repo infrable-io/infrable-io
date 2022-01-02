@@ -1,11 +1,11 @@
 ---
 title: "Blog"
-description: "We offer a range of services to keep your infrastructure humming"
-intro_image: "images/illustrations/services.png"
-intro_image_absolute: true
+description: "How-tos, walk throughs, and guides"
+intro_image: "images/illustrations/blog.png"
+intro_image_absolute: false
 intro_image_hide_on_mobile: false
 ---
 
-# Keep your infrastructure humming
+# Learn from the best
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
