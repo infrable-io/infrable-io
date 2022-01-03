@@ -28,9 +28,9 @@ theme = "infrable-io"
 
   [params.logo]
     mobile = "images/logo/logo-mobile.png"
-    mobile_height = "36px"
+    mobile_height = "50px"
     desktop = "images/logo/logo-desktop.png"
-    desktop_height = "36px"
+    desktop_height = "50px"
     alt = "Infrable.io - Your Infrastructure As Code"
 
   [params.seo]
