@@ -9,4 +9,4 @@ intro_image_hide_on_mobile: true
 
 # Infrable.io - Your Infrastructure As Code.
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+Expertise in building, managing, and deploying complex systems using bleeding edge cloud technologies.
