@@ -1,10 +1,10 @@
 ---
-title: "Service 4"
+title: "Static Website Hosting"
 date: 2021-12-29T00:00:00-06:00
-description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+description: "Get up and running with a static website. Whether for a personal project or professional business, we'll do the grunt work, so you can focus on creating."
 featured: true
 draft: false
-weight: 100
+weight: 4
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.

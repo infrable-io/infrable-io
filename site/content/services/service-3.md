@@ -1,10 +1,10 @@
 ---
-title: "Service 3"
+title: "Microservice Solutions"
 date: 2021-12-29T00:00:00-06:00
-description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+description: "Simplify your infrastructure by leveraging container orchestration (Docker Swarm, Kubernetes, Nomad, and more)."
 featured: true
 draft: false
-weight: 100
+weight: 3
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
