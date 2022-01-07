@@ -1,6 +1,21 @@
 {{ define "body_classes" }}page-home{{ end }}
 
 {{ define "main" }}
+{{ if .Site.Params.under_construction }}
+<div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="under-construction">
+        <h1>Infrable.io</h1>
+        <h1>Your Infrastructure As Code.</h1>
+        <p>Infrable.io is currently under construction. Check back soon!</p>
+        <img alt={{ .Title }} src="{{ "images/illustrations/under-construction.png" | relURL }}" />
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{{ else }}
 <div class="intro">
   <div class="container">
     <div class="row justify-content-start">
@@ -62,7 +77,8 @@
     </div>
   </div>
 </div>
-{{end}}
+{{ end }}
+{{ end }}
 
 {{ end }}
 
