@@ -3,10 +3,10 @@
 # -----------------------------------------------------------------------------
 terraform {
   backend "s3" {
-    bucket         = "terraform-state-infrable-io"
+    bucket         = "terraform-state-infrable"
     key            = "infrable-io/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "terraform-state-infrable-io"
+    dynamodb_table = "terraform-state-infrable"
   }
 }
 
