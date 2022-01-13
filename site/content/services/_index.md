@@ -8,4 +8,4 @@ intro_image_hide_on_mobile: false
 
 # Keep your infrastructure humming
 
-A building is only as sturdy as its foundation. Infrable.io can help you develop robust, fault-tolerant, scalable infrastructure.
+A building is only as sturdy as its foundation. Infrable can help you develop robust, fault-tolerant, scalable infrastructure.
