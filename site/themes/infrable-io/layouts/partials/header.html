@@ -1,10 +1,29 @@
+<!--
+  header.html (layouts/partials/header.html)
+
+  Style: assets/scss/components/_header.scss
+
+  For Bootstrap and HTML documentation, see the following:
+    * docs/bootstrap.md
+    * docs/html.md
+-->
 <div class="header">
   <div class="container">
     <div class="logo">
-      <a href="{{ .Site.BaseURL }}"><img height={{ .Site.Params.logo.desktop_height }} alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.desktop | relURL }}" /></a>
+      <a href="{{ .Site.BaseURL }}">
+        <img
+          height="{{ .Site.Params.logo.desktop_height }}"
+          alt="{{ .Site.Params.logo.alt }}"
+          src="{{ .Site.Params.logo.desktop | relURL }}"/>
+      </a>
     </div>
     <div class="logo-mobile">
-      <a href="{{ .Site.BaseURL }}"><img height={{ .Site.Params.logo.mobile_height }} alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.mobile | relURL }}" /></a>
+      <a href="{{ .Site.BaseURL }}">
+        <img
+          height="{{ .Site.Params.logo.mobile_height }}"
+          alt="{{ .Site.Params.logo.alt }}"
+          src="{{ .Site.Params.logo.mobile | relURL }}"/>
+      </a>
     </div>
     {{ if not .Site.Params.under_construction }}
     {{ partial "main-menu.html" . }}
