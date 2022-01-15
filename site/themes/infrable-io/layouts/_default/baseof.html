@@ -10,13 +10,43 @@
     * https://gohugo.io/templates/base
 -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <!--
+      Required meta tags
+
+      The following meta tags are required by Bootstrap.
+
+        HTML5 doctype
+
+        * Bootstrap requires the use of the HTML5 doctype. Without it, you'll
+          see some funky incomplete styling, but including it shouldn't cause
+          any considerable hiccups.
+
+          <!doctype html>
+          <html lang="en">
+            ...
+          </html>
+
+        Responsive meta tag
+
+        * Bootstrap is developed mobile first, a strategy in which we optimize
+          code for mobile devices first and then scale up components as
+          necessary using CSS media queries. To ensure proper rendering and
+          touch zooming for all devices, add the responsive viewport meta tag
+          to your <head>.
+
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      Documentation:
+        * https://getbootstrap.com/docs/5.1/getting-started/introduction
+    -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ block "title" . }}{{ if .Params.meta_title }}{{ .Params.meta_title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}{{ end }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="{{ "images/favicon.png" | relURL }}">
 
     <!-- Google Fonts -->
