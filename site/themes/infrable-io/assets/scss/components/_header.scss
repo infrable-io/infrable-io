@@ -33,6 +33,42 @@ $white: #ffffff;
   }
 }
 
+%logo {
+
+  a {
+    display: block;
+  }
+
+  img {
+    width: auto;
+  }
+}
+
+// In order to control the logo that is displayed, we leverage Bootstrap
+// breakpoints.
+//
+// Documentation: https://getbootstrap.com/docs/5.0/layout/breakpoints
+
+// On devices 576px and up (≥576px), show desktop logo.
+.logo-desktop {
+  @extend %logo;
+  display: none;
+
+  @include media-breakpoint-up(sm) {
+    display: block;
+  }
+}
+
+// On devices less than 576px (<576px), show mobile logo.
+.logo-mobile {
+  @extend %logo;
+  display: none;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+}
+
 .lock-scroll {
   .header {
     &.header-absolute {
