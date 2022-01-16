@@ -28,6 +28,8 @@ theme = "infrable-io"
     show_contact_box = true
     show_services_button = true
 
+  # The following can be used to display a different logo on mobile and desktop
+  # devices.
   [params.logo]
     mobile = "images/logo/logo-mobile.png"
     mobile_height = "50px"
