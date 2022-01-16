@@ -1,25 +1,69 @@
+// ----------------------------------------------------------------------------
+// _buttons.scss (assets/scss/components/_buttons.scss)
+//
+// Global style for buttons.
+//
+// For CSS and Sass documentation, see the following:
+//   * docs/css.md
+//   * docs/sass.md
+//
+// NOTE: The following can be used to add shadow:
+//
+//   box-shadow: none|h-offset v-offset blur spread color
+//
+// TODO:
+//   - [ ] Use `scale()` instead of `lighten()`.
+//
+//         Per the Sass documentation...
+//         > The lighten() function increases lightness by a fixed amount,
+//           which is often not the desired effect. To make a color a certain
+//           percentage lighter than it was before, use scale() instead.
+//
+//         NOTE: The Dart Sass transpiler is required to use this module.
+// ----------------------------------------------------------------------------
+
+// Variables
+$white: #ffffff;
+
 .button {
-  white-space: nowrap;
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 14px;
-  //box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  background: $primary;
+  // button
+  color: $white;
+  background-color: $primary;
   border-radius: 4px;
+  height: 40px;
+  padding: 0 14px;
+  display: inline-block;
+
+  // text
   font-size: 14px;
   font-weight: normal;
-  text-transform: uppercase;
   letter-spacing: 0.025em;
-  color: #ffffff;
+  line-height: 40px;
   text-decoration: none;
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.15s ease;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  // animation
+  //
+  // The @supports CSS at-rule lets you specify declarations that depend on a
+  // browser's support for one or more specific CSS features. This is called a
+  // feature query. The rule may be placed at the top level of your code or
+  // nested inside any other conditional group at-rule.
+  @supports (transition: initial) {
+    /* CSS to use if transitions are supported */
+    transition: all 0.15s ease 0s;
+  }
+
   &:hover {
-    color: #ffffff;
+    color: $white;
+    // NOTE: Not all built-in Sass modules are supported by LibSass.
+    //
+    // See the Sass documentation in order to determine if certain modules are
+    // supported by LibSass.
+    //
+    // Documentation: https://sass-lang.com/documentation/modules
     background-color: lighten($primary, 10%);
-    transform: translateY(-1px);
-    //box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     text-decoration: none;
+    transform: translateY(-1px);
   }
 }
