@@ -30,14 +30,14 @@
     position: absolute;
     top: -45px;
     bottom: -60px;
-    left: -90px;
+    left: -110px;
     width: 750px;
   }
 
   // lg: large devices (desktops, 992px and up)
   @include media-breakpoint-up(lg) {
     position: absolute;
-    top: -75px;
+    top: -135px;
     bottom: -70px;
     left: -110px;
     width: 800px;
