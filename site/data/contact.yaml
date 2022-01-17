@@ -1,2 +1,10 @@
+###############################################################################
+# contact.yaml (site/data/contact.yaml)
+#
+# Optional:
+#   * email: Email to display
+#   * phone: Phone to display
+#   * call_button_link: Link for call to action button
+###############################################################################
 email: "go@infrable.io"
-contact_button_link: "contact"
+call_button_link: "contact"

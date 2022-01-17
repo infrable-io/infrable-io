@@ -1,19 +1,42 @@
+<!--
+  call.html (layouts/partials/call.html)
+
+  Style: assets/scss/components/_call.scss
+
+  Usage:
+
+    partial "call.html" (dict "site" .Site "show_button" "true|false")
+
+  Additional Information:
+    * Data for this template can be found in contact.yaml
+      (site/data/contact.yaml).
+
+  For Bootstrap and HTML documentation, see the following:
+    * docs/bootstrap.md
+    * docs/html.md
+-->
 <div class="call">
-  <div class="call-box-top">
-    {{ if .site.Data.contact.phone }}
-    <div class="call-phone"><strong>Phone: </strong> {{ .site.Data.contact.phone }} </div>
-    {{ end }}
+  <div class="call-box-left">
     {{ if .site.Data.contact.email }}
-    <div class="call-email"><strong>Email: </strong>
+    <div class="call-email">
+      <strong>Email: </strong>
       <a href="mailto:{{ .site.Data.contact.email }}">
         {{ .site.Data.contact.email }}
       </a>
     </div>
     {{ end }}
+    {{ if .site.Data.contact.phone }}
+    <div class="call-phone">
+      <strong>Phone: </strong>
+      {{ .site.Data.contact.phone }}
+    </div>
+    {{ end }}
   </div>
   {{ if eq .show_button "true" }}
-  <div class="call-box-bottom">
-    <a href="{{ .site.Data.contact.contact_button_link | relURL }}" class="button">Contact</a>
+  <div class="call-box-right">
+    <a class="button" href="{{ .site.Data.contact.call_button_link | relURL }}">
+      Contact
+    </a>
   </div>
   {{ end }}
 </div>

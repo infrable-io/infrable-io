@@ -1,55 +1,60 @@
+// ----------------------------------------------------------------------------
+// _call.scss (assets/scss/components/_call.scss)
+//
+// Style for call.html (layouts/partials/call.html)
+//
+// For CSS and Sass documentation, see the following:
+//   * docs/css.md
+//   * docs/sass.md
+//
+// NOTE: The following can be used to add shadow:
+//
+//   box-shadow: none|h-offset v-offset blur spread color
+// ----------------------------------------------------------------------------
+
 .call {
-  position: relative;
-  overflow: hidden;
+  color: $primary;
   background-color: $white-offset;
   border-radius: 4px;
-  // box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   width: 100%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  z-index: 2;
-  @include media-breakpoint-up(sm) {
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .call-box-top {
+
+  // NOTE: z-index only works on positioned elements (absolute, relative,
+  // fixed, or sticky) and flex items (elements that are direct children of
+  // display:flex elements).
+  //
+  // The call to action is given a z-index of 1 (greater than the intro image),
+  // so that the image does not hide it.
+  position: relative;
+  z-index: 1;
+
+  .call-box-left {
+    // Grow one times faster than the other flex items.
     flex: 1 0 auto;
     padding: 20px;
-    @include media-breakpoint-up(md) {
-    }
+    justify-content: center;
   }
-  .call-box-bottom {
-    flex: auto;
+
+  .call-box-right {
+    // Grow zero times faster than the other flex items.
+    flex: 0 0 auto;
     padding: 20px;
-    border-top: 1px solid darken($white-offset, 5%);
-    @include media-breakpoint-up(sm) {
-      flex: 0 0 auto;
-      border: none;
-    }
   }
-  .call-name {
-    font-size: 1.1rem;
-    font-weight: bold;
+
+  .call-email {
+
   }
+
   .call-phone {
-    margin-bottom: 5px;
+    // Add space between "Email" (top) and "Phone" (bottom)
+    margin-top: 5px;
   }
+
   strong {
     font-weight: bold;
-  }
-  svg {
-    fill: lighten($secondary, 40%);
-    position: absolute;
-    bottom: -9px;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    @include media-breakpoint-up(sm) {
-      width: 120px;
-      height: 120px;
-    }
   }
 }
