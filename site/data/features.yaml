@@ -1,0 +1,23 @@
+- title: "Infrastructure as Code"
+  image: "images/features/iac.png"
+  description: "No magic. 100% of your infrastructure as code. Reuseable, grokable, simple."
+
+- title: "Documented"
+  image: "images/features/docs.png"
+  description: "Flatten the learning curve. All code is commented, clear, and concise."
+
+- title: "Open Source"
+  image: "images/features/oss.png"
+  description: "We support open source. All code is freely available under the MIT license."
+
+- title: "First-Class Support"
+  image: "images/features/support.png"
+  description: "All code is supported by Infrable. We also provide hands-on knowledge sharing and support."
+
+- title: "Bleeding Edge"
+  image: "images/features/tech.png"
+  description: "We keep a finger on the pulse of the technology industry. From the Linux kernel to Kubernetes, blockchain to Bitcoin."
+
+- title: "Guaranteed Delight"
+  image: "images/features/delight.png"
+  description: "At the end of the day, if you aren't delighted with our work, we've failed."
