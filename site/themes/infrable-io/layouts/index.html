@@ -1,19 +1,27 @@
-{{ define "body_classes" }}page-home{{ end }}
-
 {{ define "main" }}
+<!--
+  index.html (layouts/index.html)
+
+  The landing page for the home page.
+
+  Documentation:
+    * https://gohugo.io/templates/section-templates/#page-kinds
+-->
 {{ if .Site.Params.under_construction }}
 <div class="intro">
-    <div class="container">
-      <div class="row">
-        <div class="under-construction">
+  <div class="container">
+    <div class="row">
+      <div class="under-construction">
         <h1>Infrable</h1>
         <h1>Your Infrastructure As Code.</h1>
         <p>Infrable.io is currently under construction. Check back soon!</p>
-        <img alt={{ .Title }} src="{{ "images/illustrations/under-construction.png" | relURL }}" />
+        <img
+        alt="{{ .Title }}"
+        src="{{ "images/illustrations/under-construction.png" | relURL }}"
+        />
       </div>
     </div>
   </div>
-</div>
 </div>
 {{ else }}
 <div class="intro">
@@ -21,48 +29,32 @@
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
         {{ .Content }}
-        {{ if .Site.Params.homepage.show_contact_box }}
+        {{ if .Site.Params.home.show_contact_box }}
         {{ partial "call.html" (dict "site" .Site "show_button" "true") }}
         {{ end }}
       </div>
       {{ if .Params.intro_image }}
+      <!--
+        The following classes are used to display the intro image:
+          * intro-image
+          * intro-image-absolute
+          * intro-image-hide-mobile
+
+        TODO:
+        Clean up intro-image-absolute and intro-image-hide-mobile logic.
+      -->
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt={{ .Title }} class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}" src="{{ .Params.intro_image | relURL }}" />
+        <img
+        alt="{{ .Title }}"
+        class="intro-image intro-image-absolute intro-image-hide-mobile"
+        src="{{ .Params.intro_image | relURL }}"
+        />
       </div>
       {{ end }}
     </div>
   </div>
 </div>
-
-{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
-{{if gt (len $services) 0}}
-<div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-start">
-      {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
-      {{ range first 6 (sort $services ".Params.weight") }}
-      <div class="col-12 col-md-4 mb-1">
-        {{ .Render "summary" }}
-      </div>
-      {{ end }}
-    </div>
-    {{ if .Site.Params.homepage.show_services_button }}
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ "services/" | relURL }}">View All Services</a>
-      </div>
-    </div>
-    {{ end }}
-  </div>
-</div>
-{{end}}
-
+{{ partial "services.html" . }}
 {{ partial "features.html" . }}
-
 {{ end }}
-
-{{ end }}
-
-{{ define "footer_js" }}
-
 {{ end }}
