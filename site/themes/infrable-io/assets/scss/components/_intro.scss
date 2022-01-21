@@ -8,6 +8,10 @@
   // NOTE: Add bottom margin in order to provide space for image.
   .container-absolute {
     margin-bottom: 150px;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0px;
+    }
   }
 
   align-items: center;
