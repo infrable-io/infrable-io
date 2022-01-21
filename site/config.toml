@@ -19,13 +19,14 @@ theme = "infrable-io"
     min = "0.55.0"
 
 [params]
-  under_construction = true
+  under_construction = false
 
   google_analytics_id = ""
   google_tag_manager_id = ""
 
   [params.homepage]
     show_contact_box = true
+    show_contact_button = true
     show_services_button = true
 
   # The following can be used to display a different logo on mobile and desktop
@@ -55,39 +56,43 @@ theme = "infrable-io"
   [params.footer]
     copyright_text = "Infrable - Your Infrastructure As Code"
 
-# TODO: Uncomment when ready to deploy full site.
-# [menu]
-#   [[menu.main]]
-#     name = "Services"
-#     url = "/services/"
-#       weight = 1
-#
-#   [[menu.main]]
-#       name = "Team"
-#       url = "/team/"
-#       weight = 2
-#
-#   [[menu.main]]
-#       name = "About"
-#       url = "/about/"
-#       weight = 3
-#
-#   [[menu.main]]
-#       name = "Blog"
-#       url = "/blog/"
-#       weight = 4
-#
-#   [[menu.main]]
-#       name = "Contact"
-#       url = "/contact/"
-#       weight = 5
-#
-#   [[menu.footer]]
-#     name = "Home"
-#     url = "/"
-#       weight = 1
-#
-#   [[menu.footer]]
-#     name = "Contact"
-#     url = "/contact/"
-#       weight = 2
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+      weight = 1
+
+  [[menu.main]]
+    name = "Services"
+    url = "/services/"
+      weight = 2
+
+  [[menu.main]]
+      name = "Team"
+      url = "/team/"
+      weight = 3
+
+  [[menu.main]]
+      name = "About"
+      url = "/about/"
+      weight = 4
+
+  [[menu.main]]
+      name = "Blog"
+      url = "/blog/"
+      weight = 5
+
+  [[menu.main]]
+      name = "Contact"
+      url = "/contact/"
+      weight = 6
+
+  [[menu.footer]]
+    name = "Home"
+    url = "/"
+      weight = 1
+
+  [[menu.footer]]
+    name = "Contact"
+    url = "/contact/"
+      weight = 2
