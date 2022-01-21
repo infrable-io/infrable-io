@@ -24,7 +24,7 @@ theme = "infrable-io"
   google_analytics_id = ""
   google_tag_manager_id = ""
 
-  [params.homepage]
+  [params.home]
     show_contact_box = true
     show_contact_button = true
     show_services_button = true
