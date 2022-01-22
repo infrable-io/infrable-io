@@ -1,0 +1,76 @@
+// ----------------------------------------------------------------------------
+// _team.scss (assets/scss/pages/_team.scss)
+//
+// Style for the following:
+//   * summary-promoted.html (layouts/team/summary-promoted.html)
+//   * summary-standard.html (layouts/team/summary.html)
+//
+// For CSS and Sass documentation, see the following:
+//   * docs/css.md
+//   * docs/sass.md
+// ----------------------------------------------------------------------------
+
+.team-summary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .team-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow: hidden;
+
+    img {
+      width: 60px;
+      height: auto;
+    }
+  }
+
+  .team-meta {
+    flex: 1 0 auto;
+
+    h2 {
+      font-size: 22px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    p {
+      color: $black;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+
+  .team-content {
+    flex: 1 0 100%;
+    margin-top: 20px;
+  }
+}
+
+.team-summary-promoted {
+  background-color: $white-offset;
+  border-radius: 3px;
+  padding: 30px;
+
+  .team-image {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-right: 20px;
+    overflow: hidden;
+
+    img {
+      width: 90px;
+      height: auto;
+    }
+  }
+}
+
+.team-summary-standard {
+  align-items: center;
+}

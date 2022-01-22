@@ -50,9 +50,6 @@ theme = "infrable-io"
     meta_twitter_site = "@infrable_io"
     meta_twitter_title = "Infrable - Your Infrastructure As Code"
 
-  [params.team]
-    summary_large_truncate = 120
-
   [params.footer]
     copyright_text = "Infrable - Your Infrastructure As Code"
 
