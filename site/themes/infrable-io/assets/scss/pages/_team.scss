@@ -3,7 +3,7 @@
 //
 // Style for the following:
 //   * summary-promoted.html (layouts/team/summary-promoted.html)
-//   * summary-standard.html (layouts/team/summary.html)
+//   * summary-standard.html (layouts/team/summary-standard.html)
 //
 // For CSS and Sass documentation, see the following:
 //   * docs/css.md
@@ -18,13 +18,19 @@
   .team-image {
     height: 60px;
     width: 60px;
-    border-radius: 50%;
     margin-right: 10px;
+    // The following:
+    //
+    //   border-radius: 50%;
+    //   overflow: hidden;
+    //
+    // is used to convert a square to a circle.
+    border-radius: 50%;
     overflow: hidden;
 
     img {
-      width: 60px;
       height: auto;
+      width: 60px;
     }
   }
 
@@ -34,15 +40,15 @@
     h2 {
       font-size: 22px;
       font-weight: normal;
-      margin: 0;
+      margin: 0px;
     }
 
     p {
-      color: $black;
+      color: $primary;
       font-size: 12px;
       font-weight: 500;
       text-transform: uppercase;
-      margin: 0;
+      margin: 0px;
     }
   }
 
@@ -54,14 +60,20 @@
 
 .team-summary-promoted {
   background-color: $white-offset;
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 30px;
 
   .team-image {
     height: 90px;
     width: 90px;
-    border-radius: 50%;
     margin-right: 20px;
+    // The following:
+    //
+    //   border-radius: 50%;
+    //   overflow: hidden;
+    //
+    // is used to convert a square to a circle.
+    border-radius: 50%;
     overflow: hidden;
 
     img {
@@ -73,4 +85,5 @@
 
 .team-summary-standard {
   align-items: center;
+  padding-left: 10px;
 }
