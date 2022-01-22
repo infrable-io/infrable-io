@@ -1,0 +1,25 @@
+// ----------------------------------------------------------------------------
+// _services.scss (assets/scss/pages/_services.scss)
+//
+// Style for the following:
+//   * single.html (layouts/services/single.html)
+//   * summary.html (layouts/services/summary.html)
+//
+// For CSS and Sass documentation, see the following:
+//   * docs/css.md
+//   * docs/sass.md
+// ----------------------------------------------------------------------------
+
+.services-single {
+  .content {
+    > p {
+      &:first-of-type {
+        color: rgb(104, 104, 104);
+        font-size: 1.6rem;
+        font-weight: regular;
+        line-height: 1.4;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
