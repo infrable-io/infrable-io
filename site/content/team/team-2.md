@@ -6,7 +6,7 @@ job_title: "Employee"
 linkedin_url: "https://www.linkedin.com"
 promoted: true
 draft: false
-weight: 100
+weight: 2
 ---
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
