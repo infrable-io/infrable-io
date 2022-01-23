@@ -1,10 +1,18 @@
-// Colors
-$primary: #000000;
-$secondary: #8c8c8c;
-$black: #000000;
-$white: #ffffff;
-$white-offset: #ebdbb2;
-$steel: #928374;
+// Color Scheme
+//
+// The Infrable.io color scheme is loosely based off of the gruvbox color scheme:
+//   * https://github.com/morhetz/gruvbox
+//
+// Primary: Main menu, hamburger, buttons, header, type (titles), footer
+// Secondary: Call to action, features, team
+// Tertiary: Type (content)
+// Quaternary: Blockquotes
+$primary:    #1d2021; // - (29,32,33)
+$secondary:  #ebdbb2; // - (235,219,178)
+$tertiary:   #928374; // - (146,131,116)
+$quaternary: #282828; // - (40,40,40)
+$black:      #000000; // Black (0,0,0)
+$white:      #ffffff; // White (255,255,255)
 
 // Fonts
 // Google fonts are added in `layouts/partials/google-fonts.html`

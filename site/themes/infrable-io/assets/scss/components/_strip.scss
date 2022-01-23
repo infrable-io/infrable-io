@@ -6,7 +6,7 @@
   background-color: white;
 }
 .strip-grey {
-  background-color: $white-offset;
+  background-color: $secondary;
 }
 .strip-diagonal {
   transform: skewY(5deg);
@@ -17,16 +17,16 @@
   }
 }
 .strip-primary-gradient {
-  background-image: linear-gradient(to right, $primary, $secondary);
+  background-image: linear-gradient(to right, $primary, $tertiary);
 }
 .strip-primary-gradient-top-bottom {
-  background-image: linear-gradient(to bottom, $primary, $secondary);
+  background-image: linear-gradient(to bottom, $primary, $tertiary);
 }
 .strip-primary {
   background-color: $primary;
 }
-.strip-secondary {
-  background-color: $secondary;
+.strip-tertiary {
+  background-color: $tertiary;
 }
 
 .strip-diagonal-right {
