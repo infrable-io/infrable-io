@@ -1,34 +1,23 @@
-{{- if .Site.IsServer -}}
-<!-- Don't add Google analytics to localhost -->
-{{ else }}
-{{ $gid := (getenv "HUGO_GOOGLE_ANALYTICS_ID") }}
-{{ if $gid }}
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{- $gid -}}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+<!--
+  google-analytics.html (layouts/partials/google-analytics.html)
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
+  Support for Google Analytics 4 via Hugo's internal templates.
 
-  gtag('js', new Date());
-  gtag('config', '{{- $gid -}}');
-</script>
-{{ else }}
-{{ if .Site.Params.google_analytics_id }}
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{- .Site.Params.google_analytics_id -}}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+  NOTE: The measurement ID should be set in config.toml:
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
+    ```
+    [params]
 
-  gtag('js', new Date());
-  gtag('config', '{{- .Site.Params.google_analytics_id -}}');
-</script>
-{{ end }}
-{{ end }}
+      # Google Analytics measurement ID (Google Analytics 4)
+      googleAnalytics = 'G-MEASUREMENT_ID'
+    ```
+
+  NOTE: When using Google Analytics v4, use _internal/google_analytics.html.
+
+  Documentation:
+    * https://gohugo.io/templates/internal/#google-analytics
+-->
+<!-- Do not use Google Analytics during local development -->
+{{ if not .Site.IsServer }}
+{{ template "_internal/google_analytics.html" . }}
 {{ end }}

@@ -21,8 +21,8 @@ theme = "infrable-io"
 [params]
   under_construction = false
 
-  google_analytics_id = ""
-  google_tag_manager_id = ""
+  # Google Analytics measurement ID (Google Analytics 4)
+  googleAnalytics = "G-P75FQ2SHGT"
 
   [params.home]
     show_contact_box = true
