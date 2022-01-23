@@ -2,7 +2,7 @@
 <!--
   index.html (layouts/index.html)
 
-  The landing page for the home page.
+  Landing page for the home page.
 
   Documentation:
     * https://gohugo.io/templates/section-templates/#page-kinds
@@ -15,10 +15,7 @@
         <h1>Infrable</h1>
         <h1>Your Infrastructure As Code.</h1>
         <p>Infrable.io is currently under construction. Check back soon!</p>
-        <img
-        alt="{{ .Title }}"
-        src="{{ "images/illustrations/under-construction.png" | relURL }}"
-        />
+        <img alt="{{ .Title }}" src="{{ "images/illustrations/under-construction.png" | relURL }}"/>
       </div>
     </div>
   </div>
@@ -44,11 +41,8 @@
         Clean up intro-image-absolute and intro-image-hide-mobile logic.
       -->
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img
-        alt="{{ .Title }}"
-        class="intro-image intro-image-absolute intro-image-hide-mobile"
-        src="{{ .Params.intro_image | relURL }}"
-        />
+        <img class="intro-image intro-image-absolute intro-image-hide-mobile"
+             alt="{{ .Title }}" src="{{ .Params.intro_image | relURL }}"/>
       </div>
       {{ end }}
     </div>
