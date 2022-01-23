@@ -1,0 +1,20 @@
+{{ define "main" }}
+<!--
+  list.html (layouts/blog/list.html)
+
+  List page template for 'Blog' (/blog/).
+-->
+{{ partial "intro.html" . }}
+<div class="container pt-6 pb-6">
+  {{ range .Pages.ByWeight }}
+  <!--
+    NOTE:
+    In Bootstrap, the 'row' class is given a right and left margin of -15px.
+    In order to override this margin, use style="margin: auto".
+  -->
+  <div class="row pb-6" style="margin:auto">
+    {{ .Render "summary" }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}

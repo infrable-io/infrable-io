@@ -1,0 +1,24 @@
+<!--
+  summary.html (layouts/blog/summary.html)
+
+  Summary view template for blog posts.
+
+  Style:
+    * assets/scss/pages/_blog.scss
+-->
+<div class="blog blog-summary">
+  <div class="blog-content">
+    <h2 class="blog-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    <div class="blog-date">
+      <time>{{ .Date.Format "January 2, 2006" }}</time>
+    </div>
+    <div class="blog-description">
+      <p>{{ .Description | plainify | htmlUnescape }}</p>
+    </div>
+    <div class="blog-author">
+      by {{ .Params.author }}
+    </div>
+  </div>
+</div>

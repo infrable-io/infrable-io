@@ -1,20 +1,47 @@
+// ----------------------------------------------------------------------------
+// _blog.scss (assets/scss/pages/_blog.scss)
+//
+// Style for the following:
+//   * list.html (layouts/blog/single.html)
+//   * single.html (layouts/blog/single.html)
+//   * summary.html (layouts/blog/summary.html)
+//
+// For CSS and Sass documentation, see the following:
+//   * docs/css.md
+//   * docs/sass.md
+// ----------------------------------------------------------------------------
+
+.blog-single {
+
+  .blog-date {
+    color: $tertiary;
+    margin-bottom: 10px;
+  }
+
+  .blog-author {
+    color: lighten($primary, 20%);
+    margin-bottom: 25px;
+  }
+}
+
 .blog-summary {
 
   .blog-title {
     margin-bottom: 15px;
   }
 
-  .blog-author {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
   .blog-date {
-    margin-top: 10px;
+    color: $tertiary;
     margin-bottom: 10px;
   }
 
   .blog-description {
+    p {
+      margin-bottom: 10px;
+    }
+  }
 
+  .blog-author {
+    color: lighten($primary, 20%);
   }
 }
