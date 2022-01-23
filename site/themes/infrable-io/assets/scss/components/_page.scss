@@ -9,3 +9,20 @@
     position: relative;
   }
 }
+
+// Style for custom 404 page (layouts/404.html)
+.page-not-found {
+  display: flex;
+  margin-top: 20px;
+
+  img {
+    min-width: 250px;
+    max-width: 500px;
+    flex: 1 0 0;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
