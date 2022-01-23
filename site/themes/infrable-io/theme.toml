@@ -15,7 +15,7 @@ homepage = "https://github.com/infrable-io/infrable-io/tree/master/site/themes/i
 demosite = "https://infrable.io"
 tags = []
 features = []
-min_version = "0.41.0"
+min_version = "0.55.0"
 
 [author]
   name = "Infrable"
