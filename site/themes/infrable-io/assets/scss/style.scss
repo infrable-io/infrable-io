@@ -61,8 +61,8 @@ $sub-footer-text-color: $white;
 // Pages
 @import 'pages/home';
 @import 'pages/team';
-@import 'pages/blog/blog-summary';
-@import 'pages/services/page-services-single';
+@import 'pages/blog';
+@import 'pages/services';
 
 body {
   font-size: 16px;
