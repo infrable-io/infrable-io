@@ -43,7 +43,7 @@
         * https://getbootstrap.com/docs/5.1/getting-started/introduction
     -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ block "title" . }}{{ if .Params.meta_title }}{{ .Params.meta_title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}{{ end }}</title>
@@ -118,26 +118,43 @@
     {{ partial "main-menu-mobile.html" . }}
 
     <div class="wrapper">
-      {{ partial "header.html" . }}
-      {{ block "main" . }}
-      {{ end }}
+    {{ partial "header.html" . }}
+    {{ block "main" . }}
+    {{ end }}
     </div>
 
     {{ partial "footer.html" . }}
     {{ partial "sub-footer.html" . }}
 
-    {{ $scripts := resources.Get "js/scripts.js" }}
+    <!--
+      Add JavaScript
 
-    {{ block "footer_js" . }}
-    {{ end }}
+      JavaScript is added to assets/js/main.js.
 
+      In non-local environments, the JavaScript is minified and subresource
+      integrity (SRI) is applied:
+
+      > Subresource Integrity (SRI) is a security feature that enables browsers
+        to verify that resources they fetch (for example, from a CDN) are
+        delivered without unexpected manipulation. It works by allowing you to
+        provide a cryptographic hash that a fetched resource must match.
+
+      Source: https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity
+
+      Documentation:
+        * https://gohugo.io/hugo-pipes/minification
+        * https://gohugo.io/hugo-pipes/fingerprint
+    -->
+    {{ $js := resources.Get "js/main.js" }}
     {{ if .Site.IsServer }}
-    <script type="text/javascript" src="{{ $scripts.RelPermalink }}"></script>
+    <script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
     {{ else }}
-    <script type="text/javascript" src="{{ ($scripts | minify | fingerprint).RelPermalink }}"></script>
+    {{ $min_js := $js | resources.Minify }}
+    {{ $secure_js := $min_js | resources.Fingerprint "sha512" }}
+    <script type="text/javascript" src="{{ $secure_js.Permalink }}" integrity="{{ $secure_js.Data.Integrity }}"></script>
     {{ end }}
 
-    {{ partial "google-tag-manager.html" . }}
+    <!-- Support for Google Analytics 4 -->
     {{ partial "google-analytics.html" . }}
   </body>
 
