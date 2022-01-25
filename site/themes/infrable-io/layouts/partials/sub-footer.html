@@ -1,3 +1,11 @@
+<!--
+  sub-footer.html (layouts/partials/sub-footer.html)
+
+  Partial template for sub footer.
+
+  Style:
+    * assets/scss/components/_sub-footer.scss
+-->
 <div class="sub-footer">
   <div class="container">
     <div class="row">
@@ -7,7 +15,9 @@
           {{ partial "social.html" . }}
           {{ end }}
           {{ if .Site.Params.footer.copyright_text }}
-          <div class="copyright">{{ .Site.Params.footer.copyright_text | safeHTML }}</div>
+          <div class="copyright">
+            {{ .Site.Params.footer.copyright_text | safeHTML }}
+          </div>
           {{ end }}
         </div>
       </div>
