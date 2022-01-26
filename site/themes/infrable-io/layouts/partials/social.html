@@ -1,7 +1,17 @@
+<!--
+    social.html (layouts/partials/social.html)
+
+    Partial template for social links.
+
+    Style:
+      * assets/scss/components/_social.scss
+-->
 {{ if .Site.Data.social }}
 <div class="social">
     {{ range .Site.Data.social }}
-    <a href="{{ .link }}" target="blank"><img src="{{ .image | relURL }}" title="{{ .name }}" alt="{{ .name }}" /></a>
+    <a target="_blank" rel="noreferrer" href="{{ .url }}">
+        <img alt="{{ .name }}" title="{{ .name }}" src="{{ .image | relURL }}"/>
+    </a>
     {{ end }}
 </div>
 {{ end }}
