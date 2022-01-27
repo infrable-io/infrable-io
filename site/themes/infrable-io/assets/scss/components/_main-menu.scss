@@ -1,32 +1,57 @@
+// ----------------------------------------------------------------------------
+// _main-menu.scss (assets/scss/components/_main-menu.scss)
+//
+// Style for the following:
+//   * main-menu.html (layouts/partials/main-menu.html)
+//
+// For CSS and Sass documentation, see the following:
+//   * docs/css.md
+//   * docs/sass.md
+// ----------------------------------------------------------------------------
+
+// On devices 768px and up (≥768px), show main menu.
 .main-menu {
   display: none;
+
   @include media-breakpoint-up(md) {
     display: block;
   }
+
   > ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+
     > li {
-      list-style: none;
       font-size: 1rem;
+      list-style: none;
+
       > a {
-        padding: 10px 12px 10px 12px;
-        display: inline-block;
+        color: $primary;
         font-weight: normal;
         text-decoration: none;
-        color: $primary;
+        padding: 10px 12px 10px 12px;
+        display: inline-block;
+
         &:hover {
           text-decoration: underline;
+          @supports (transition: initial) {
+            /* CSS to use if transitions are supported */
+            transition: all 0.15s ease 0s;
+          }
+          transform: translateY(-5px);
         }
       }
+
       &.active {
+
         > a {
           font-weight: bold;
           text-decoration: none;
+
           &:hover {
             text-decoration: none;
-            transition: all 225ms ease-in 0s;
+            transition: all 0.15s ease 0s;
           }
         }
       }

@@ -1,14 +1,19 @@
-<div id="main-menu" class="main-menu">
+<!--
+  main-menu.html (layouts/partials/main-menu.html)
+
+  Partial template for the main menu (Home).
+
+  Style:
+    * assets/scss/components/_main-menu.scss
+-->
+<div class="main-menu" id="main-menu">
   <ul>
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
     {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
     {{ $active = or $active (eq .Name $currentPage.Title) }}
     <li class="menu-item-{{ .Name | lower }} {{ if $active }}active{{ end }}">
-      <a href="{{.URL}}">
-        {{ .Pre }}
-        <span>{{ .Name }}</span>
-      </a>
+      <a href="{{ .URL }}">{{ .Pre }}<span>{{ .Name }}</span></a>
     </li>
     {{end}}
   </ul>
