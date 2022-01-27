@@ -1,0 +1,29 @@
+<!--
+  services.html (layouts/partials/services.html)
+
+  Partial template for services (Home).
+
+  Style:
+    * assets/scss/components/_page.scss
+-->
+{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
+{{ if gt (len $services) 0 }}
+<div class="strip">
+  <div class="container pt-6 pb-6 pb-md-10">
+    <div class="row justify-content-start">
+      {{ range first 6 (sort $services ".Params.weight") }}
+      <div class="col-12 col-md-4 mb-1">
+        {{ .Render "summary" }}
+      </div>
+      {{ end }}
+    </div>
+    {{ if .Site.Params.home.show_services_button }}
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <a class="button button-primary" href="{{ "services/" | relURL }}">View All Services</a>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
