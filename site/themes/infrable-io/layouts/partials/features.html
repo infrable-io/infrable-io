@@ -1,22 +1,18 @@
 <!--
   features.html (layouts/partials/features.html)
 
-  Style: assets/scss/components/_features.scss
+  Partial template for features (Home).
 
-  Usage:
-
-    partial "features.html" .
+  Style:
+    * assets/scss/components/_features.scss
+    * assets/scss/components/_page.scss
 
   Additional Information:
     * Data for this template can be found in features.yaml
       (site/data/features.yaml).
-
-  For Bootstrap and HTML documentation, see the following:
-    * docs/bootstrap.md
-    * docs/html.md
 -->
-{{if .Site.Data.features}}
-<div class="strip strip-grey">
+{{ if .Site.Data.features }}
+<div class="strip strip-secondary">
   <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
     <div class="row justify-content-center">
       {{ range .Site.Data.features }}
