@@ -1,11 +1,17 @@
-<div id="main-menu-mobile" class="main-menu-mobile">
+<!--
+  main-menu-mobile.html (layouts/partials/main-menu-mobile.html)
+
+  Partial template for the mobile main menu (Home).
+
+  Style:
+    * assets/scss/components/_main-menu-mobile.scss
+-->
+<div class="main-menu-mobile" id="main-menu-mobile">
   <ul>
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
     <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
-      <a href="{{ .URL }}">
-        <span>{{ .Name }}</span>
-      </a>
+      <a href="{{ .URL }}"><span>{{ .Name }}</span></a>
     </li>
     {{end}}
   </ul>
