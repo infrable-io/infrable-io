@@ -9,4 +9,4 @@ draft: false
 weight: 1
 ---
 
-Nickolas Kraus is an experienced Software Engineer and founder at Infrable.
+Nickolas Kraus is an experienced Software Engineer and founder of Infrable.
