@@ -1,12 +1,13 @@
 // Color Scheme
 //
-// The Infrable.io color scheme is loosely based off of the gruvbox color scheme:
+// The Infrable.io color scheme is loosely based off of the gruvbox color
+// scheme:
 //   * https://github.com/morhetz/gruvbox
 //
-// Primary: Main menu, hamburger, buttons, header, type (titles), footer
-// Secondary: Call to action, features, team
-// Tertiary: Type (content)
-// Quaternary: Blockquotes
+// Primary: main menu, hamburger, buttons, header, type (titles), footer
+// Secondary: call to action, features, team
+// Tertiary: type (content)
+// Quaternary: blockquotes
 $primary:    #1d2021; // - (29,32,33)
 $secondary:  #ebdbb2; // - (235,219,178)
 $tertiary:   #928374; // - (146,131,116)
@@ -24,9 +25,11 @@ $link-color: $primary;
 $link-decoration: none;
 $link-hover-decoration: underline;
 
-// Footer
+// Color for footer
+//   * layouts/partials/footer.html
+//   * assets/scss/components/_footer.scss
+$footer-color: $white;
 $footer-background-color: $primary;
-$footer-text-color: $white;
 
 // Color for sub footer
 //   * layouts/partials/sub-footer.html
@@ -38,7 +41,9 @@ $sub-footer-background-color: $black;
 @import 'bootstrap-variables';
 @import 'bootstrap/bootstrap-reboot';
 @import 'bootstrap/bootstrap-grid';
-// @import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
+// Add the following line to import the entire Bootstrap library:
+//
+// @import 'bootstrap/bootstrap';
 
 // Libraries
 @import 'libraries/hamburgers/hamburgers';
@@ -66,13 +71,3 @@ $sub-footer-background-color: $black;
 @import 'pages/home';
 @import 'pages/services';
 @import 'pages/team';
-
-body {
-  font-size: 16px;
-  line-height: 1.2;
-  font-family: $font-family-base;
-  @include media-breakpoint-up(md) {
-    font-size: 16px;
-    line-height: 1.3;
-  }
-}
