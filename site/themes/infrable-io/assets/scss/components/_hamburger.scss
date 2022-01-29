@@ -1,23 +1,39 @@
+// ----------------------------------------------------------------------------
+// _hamburger.scss (assets/scss/components/_hamburger.scss)
+//
+// Style for the following:
+//   * hamburger.html (layouts/partials/hamburger.html)
+//
+// For CSS and Sass documentation, see the following:
+//   * docs/css.md
+//   * docs/sass.md
+// ----------------------------------------------------------------------------
+
 .hamburger {
   padding: 10px 0 10px 10px;
+  cursor: pointer;
   outline: none;
   z-index: 30;
-  cursor: pointer;
+
   @include media-breakpoint-up(md) {
     display: none;
   }
+
   &:focus {
     outline: none;
   }
+
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
     background: $primary;
   }
+
   .hamburger-inner::after {
     width: 18px;
     right: 0;
   }
+
   &.is-active {
     .hamburger-inner::after {
       width: inherit;
