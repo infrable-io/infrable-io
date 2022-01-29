@@ -26,7 +26,7 @@ popd >/dev/null || exit
 pushd "$(pwd)/site" >/dev/null || exit
 
 # Remove static files
-rm -rf "${PWD}/public"
+rm -rf "$(pwd)/public"
 
 # Build static files
 hugo
