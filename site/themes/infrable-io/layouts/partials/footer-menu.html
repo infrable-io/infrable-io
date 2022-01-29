@@ -1,15 +1,17 @@
-<div id="footer-menu" class="footer-menu">
+<!--
+  footer-menu.html (layouts/partials/footer-menu.html)
+
+  Partial template for footer menu.
+-->
+<div class="footer-menu" id="footer-menu">
   <ul>
     {{ $currentPage := . }}
     {{ range .Site.Menus.footer }}
     {{ $active := or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }}
     {{ $active = or $active (eq .Name $currentPage.Title) }}
     <li class="menu-item-{{ .Name | lower }} {{ if $active }}active{{ end }}">
-      <a href="{{.URL}}">
-        {{ .Pre }}
-        <span>{{ .Name }}</span>
-      </a>
+      <a href="{{ .URL }}">{{ .Pre }}<span>{{ .Name }}</span></a>
     </li>
-    {{end}}
+    {{ end }}
   </ul>
 </div>
