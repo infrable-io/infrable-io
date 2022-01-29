@@ -1,12 +1,22 @@
 <!--
-  summary.html
+  summary.html (layouts/_default/summary.html)
 
   Summary view template.
 
+  A generated summary of the content for easily showing a snippet in a summary
+  view. The breakpoint can be set manually by inserting 'more' as a comment at
+  the appropriate place in the content page, or the summary can be written
+  independent of the page text as is done here.
+
+  Hugo passes the entire page object to the summary.html view template.
+
+  To use this template add a 'description' to the content front matter.
+
   Documentation:
+    * https://gohugo.io/content-management/summaries
+    * https://gohugo.io/variables/page
     * https://gohugo.io/templates/views/#summaryhtml
 -->
-
 <div class="summary">
   <h2>
     <a href="{{ .Permalink }}">{{ .Title }}</a>
