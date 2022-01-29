@@ -1,9 +1,17 @@
+<!--
+  footer.html (layouts/partials/footer.html)
+
+  Partial template for footer.
+
+  Style:
+    * assets/scss/components/_footer.scss
+-->
 <div class="footer">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="footer-inner">
-          <h3 class="footer-title">{{.Site.Title}}</h3>
+          <h3 class="footer-title">{{ .Site.Title }}</h3>
           {{ partial "footer-menu" . }}
         </div>
       </div>
