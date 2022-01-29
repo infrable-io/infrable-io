@@ -1,7 +1,8 @@
 // ----------------------------------------------------------------------------
 // _header.scss (assets/scss/components/_header.scss)
 //
-// Style for header.html (layouts/partials/header.html)
+// Style for the following:
+//   * header.html (layouts/partials/header.html)
 //
 // For CSS and Sass documentation, see the following:
 //   * docs/css.md
@@ -44,8 +45,8 @@ $white: #ffffff;
   }
 }
 
-// In order to control the logo that is displayed, we leverage Bootstrap
-// breakpoints.
+// In order to control the logo that is displayed, Bootstrap breakpoints are
+// used.
 //
 // Documentation: https://getbootstrap.com/docs/5.0/layout/breakpoints
 
