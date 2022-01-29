@@ -37,9 +37,9 @@ override.tf.json
 .terraform.lock.hcl
 
 # Hugo
+.hugo_build.lock
 site/public/
 site/resources/
-.hugo_build.lock
 
 # npm
 node_modules
