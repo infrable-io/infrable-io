@@ -19,7 +19,6 @@ theme = "infrable-io"
     min = "0.55.0"
 
 [params]
-  under_construction = false
 
   # Google Analytics measurement ID (Google Analytics 4)
   googleAnalytics = "G-P75FQ2SHGT"
