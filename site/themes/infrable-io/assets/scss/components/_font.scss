@@ -1,44 +1,62 @@
+// ----------------------------------------------------------------------------
+// _font.scss (assets/scss/components/_font.scss)
+//
+// For CSS and Sass documentation, see the following:
+//   * docs/css.md
+//   * docs/sass.md
+// ----------------------------------------------------------------------------
+
 a {
   color: $primary;
 }
+
 p {
-  line-height: 26px;
   color: $tertiary;
   font-family: $font-family-base;
+  line-height: 26px;
   margin-bottom: 20px;
 }
+
 h1 {
   font-size: 24px;
   font-family: $font-family-heading;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: 20px;
+
   @include media-breakpoint-up(md) {
     font-size: 32px;
-    line-height: 1.2;
+    line-height: 1.4;
   }
 }
+
 h2 {
   font-size: 20px;
   font-family: $font-family-heading;
   line-height: 1.4;
   margin-bottom: 10px;
+
   @include media-breakpoint-up(md) {
     font-size: 26px;
     line-height: 1.4;
   }
 }
+
 h3 {
   font-size: 16px;
+  font-family: $font-family-heading;
   line-height: 1.4;
+
   @include media-breakpoint-up(md) {
     font-size: 20px;
     line-height: 1.4;
   }
 }
+
 ul,
 ol {
   margin: 0;
   padding: 0;
+
   li {
     padding: 0;
     margin: 0;
