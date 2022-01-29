@@ -6,5 +6,3 @@ featured: true
 draft: false
 weight: 5
 ---
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
