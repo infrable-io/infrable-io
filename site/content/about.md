@@ -4,8 +4,8 @@ date: 2021-12-29T00:00:00-06:00
 layout: about
 ---
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+Infrable was created with the goal of making high-velocity software development accessible, scalable and resilient. Though an organization's platform provides the bedrock upon which great software can be built, it is hardly a money-making enterprise. Companies employ entire teams of skilled engineers to develop, automate and manage complex, mission-critical systems that the end user usually never sees.
 
-Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+Platforms such as Amazon Web Services and Google Cloud Platform have slowly eroded some of the difficulty in deploying robust, fault-tolerant applications, however the deployment, orchestration, networking and monitoring space has become a fractal of competing solutions, practices and paradigms. Nevertheless, from the noise a steady signal can be detected. Organizations have gravitated toward common patterns and architectures, which have proven to provide durable value.
 
-Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+Our goal at Infrable is to short-circuit the trial-and-error, refactors and rearchitectures that are inherent to nascent organizations and provide a clear, tested path to operationalized infrastructure.
