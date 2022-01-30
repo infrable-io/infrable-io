@@ -13,15 +13,15 @@ title = "Infrable"
 
 theme = "infrable-io"
 
+# Google Analytics measurement ID (Google Analytics 4)
+googleAnalytics = "G-P75FQ2SHGT"
+
 [module]
   [module.hugoVersion]
     extended = true
     min = "0.55.0"
 
 [params]
-
-  # Google Analytics measurement ID (Google Analytics 4)
-  googleAnalytics = "G-P75FQ2SHGT"
 
   [params.home]
     show_contact_box = true
