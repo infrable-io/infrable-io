@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-description: "How-tos, walk throughs, and guides"
+description: "How-tos, walk throughs, and guides for building, automating and managing cloud infrastructure"
 intro_image: "images/illustrations/blog.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
@@ -8,4 +8,4 @@ intro_image_hide_on_mobile: false
 
 # Build your knowledge base
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+How-tos, walk throughs, and guides for building, automating and managing cloud infrastructure

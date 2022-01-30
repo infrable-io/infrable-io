@@ -11,16 +11,30 @@
 //   * docs/sass.md
 // ----------------------------------------------------------------------------
 
+// Variables
+$lighter: lighten($primary, 20%);
+
+.blog {
+
+  p {
+    color: $primary;
+  }
+}
+
 .blog-single {
 
   .blog-date {
-    color: $tertiary;
+    color: $lighter;
+    font-size: 14px;
     margin-bottom: 10px;
+    margin-left: 3px;
   }
 
   .blog-author {
-    color: lighten($primary, 20%);
+    color: $lighter;
+    font-size: 14px;
     margin-bottom: 25px;
+    margin-left: 3px;
   }
 }
 
@@ -31,17 +45,23 @@
   }
 
   .blog-date {
-    color: $tertiary;
+    color: $lighter;
+    font-size: 14px;
     margin-bottom: 10px;
+    margin-left: 3px;
+  }
+
+  .blog-author {
+    color: $lighter;
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-left: 3px;
   }
 
   .blog-description {
     p {
+      margin-left: 3px;
       margin-bottom: 10px;
     }
-  }
-
-  .blog-author {
-    color: lighten($primary, 20%);
   }
 }
