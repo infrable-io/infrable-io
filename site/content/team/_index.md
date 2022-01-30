@@ -1,6 +1,6 @@
 ---
 title: "Team"
-description: "A helpful and skilled team to support your needs"
+description: "Our team of experts have deep experience building out multi-tier, production-ready cloud infrastructure"
 intro_image: "images/illustrations/team.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
@@ -8,4 +8,4 @@ intro_image_hide_on_mobile: false
 
 # Meet the Infrable team
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+Our team has deep experience building out multi-tier, production-ready cloud infrastructure
