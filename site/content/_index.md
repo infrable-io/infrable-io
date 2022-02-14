@@ -3,7 +3,6 @@ title: "Home"
 meta_title: "Infrable"
 description: "Your Infrastructure As Code."
 intro_image: "images/illustrations/home.png"
-intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 

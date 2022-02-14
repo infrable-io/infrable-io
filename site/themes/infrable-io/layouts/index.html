@@ -14,24 +14,15 @@
 <div class="intro">
   <div class="container">
     <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+      <div class="col-12 col-md-9 col-lg-6 col-xl-5 order-2 order-md-1">
         {{ .Content }}
         {{ if .Site.Params.home.show_contact_box }}
         {{ partial "call.html" (dict "site" .Site "show_button" "true") }}
         {{ end }}
       </div>
       {{ if .Params.intro_image }}
-      <!--
-        The following classes are used to display the intro image:
-          * intro-image
-          * intro-image-absolute
-          * intro-image-hide-mobile
-
-        TODO:
-        Clean up intro-image-absolute and intro-image-hide-mobile logic.
-      -->
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img class="intro-image intro-image-absolute intro-image-hide-mobile"
+      <div class="col-12 col-md-3 col-lg-6 col-xl-7 order-1 order-md-2 position-relative">
+        <img class="intro-image intro-image-hide-mobile"
              alt="{{ .Title }}" src="{{ .Params.intro_image | relURL }}"/>
       </div>
       {{ end }}
