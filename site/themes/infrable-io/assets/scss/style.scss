@@ -18,7 +18,8 @@ $white:      #ffffff; // White (255,255,255)
 // Fonts
 // Google fonts are added in `layouts/partials/google-fonts.html`
 $font-family-base: Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: 'Playfair Display', serif, -apple-system;
+$font-family-heading: 'Roboto Mono', monospace, -apple-system;
+$font-family-monospace: 'Roboto Mono', monospace, -apple-system;
 
 // Links
 $link-color: $primary;
@@ -62,10 +63,12 @@ $sub-footer-background-color: $black;
 @import 'components/title';
 @import 'components/content';
 @import 'components/intro';
+@import 'components/services';
 @import 'components/features';
 @import 'components/social';
 
 // Pages
+@import 'pages/about';
 @import 'pages/blog';
 @import 'pages/contact';
 @import 'pages/home';

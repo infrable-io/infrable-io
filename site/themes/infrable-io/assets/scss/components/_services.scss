@@ -1,17 +1,17 @@
 // ----------------------------------------------------------------------------
-// _contact.scss (assets/scss/pages/contact.scss)
+// _services.scss (assets/scss/components/_services.scss)
 //
 // Style for the following:
-//   * contact.html (layouts/page/contact.html)
+//   * services.html (layouts/partials/services.html)
 //
 // For CSS and Sass documentation, see the following:
 //   * docs/css.md
 //   * docs/sass.md
 // ----------------------------------------------------------------------------
 
-.contact-single {
+.service {
 
-  h1 {
-    font-weight: 100;
+  .service-title {
+    font-weight: 400;
   }
 }

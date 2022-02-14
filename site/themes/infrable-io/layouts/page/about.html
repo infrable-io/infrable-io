@@ -1,0 +1,25 @@
+{{ define "main" }}
+<!--
+  about.html (layouts/page/about.html)
+
+  Single page template for about.
+
+  Style:
+    * assets/scss/pages/_about.scss
+
+  NOTE: This template is specified via front matter.
+
+  Documentation:
+    * https://gohugo.io/templates/lookup-order/#hugo-layouts-lookup-rules
+-->
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="about about-single">
+        <h1 class="title">{{ .Title }}</h1>
+        <div class="content">{{ .Content }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

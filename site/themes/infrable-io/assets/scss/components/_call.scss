@@ -33,6 +33,7 @@
   z-index: 1;
 
   .call-box-left {
+    font-family: $font-family-monospace;
     // Grow one times faster than the other flex items.
     flex: 1 0 auto;
     padding: 20px;

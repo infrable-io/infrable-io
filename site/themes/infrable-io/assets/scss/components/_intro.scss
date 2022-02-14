@@ -29,7 +29,7 @@
   h1 {
     color: $black;
     font-size: 42px;
-    font-weight: bold;
+    font-weight: 100;
     line-height: 1.2;
 
     @include media-breakpoint-up(md) {
