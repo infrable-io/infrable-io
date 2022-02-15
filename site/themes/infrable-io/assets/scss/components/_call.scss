@@ -38,16 +38,26 @@
     flex: 1 0 auto;
     padding: 20px;
     justify-content: center;
+
+    @include media-breakpoint-down(xs) {
+      padding: 12px;
+    }
   }
 
   .call-box-right {
     // Grow zero times faster than the other flex items.
     flex: 0 0 auto;
     padding: 20px;
+
+    @include media-breakpoint-down(xs) {
+      padding: 12px;
+    }
   }
 
   .call-email {
-
+    @include media-breakpoint-down(xs) {
+      font-size: 14px;
+    }
   }
 
   .call-phone {
