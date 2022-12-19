@@ -9,7 +9,9 @@
 <div class="service service-summary">
   <div class="service-content">
     <h2 class="service-title">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ .Title }}
+      <!-- Temporarily disable link -->
+      <!-- <a href="{{ .Permalink }}">{{ .Title }}</a> -->
     </h2>
     <p>{{ .Description | plainify | htmlUnescape }}</p>
   </div>
