@@ -8,6 +8,10 @@ draft: false
 weight: 1
 ---
 
+<p align="center">
+  <img src="../img/hello-world/cover.png"/>
+</p>
+
 Hello, World! We are Infrable!
 
 After a month of work, Infrable.io is now live!
