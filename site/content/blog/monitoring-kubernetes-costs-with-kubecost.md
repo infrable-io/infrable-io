@@ -8,7 +8,7 @@ draft: false
 weight: 1
 ---
 
-<p align="center">
+<p style="text-align: center;">
   <img src="../img/monitoring-kubernetes-costs-with-kubecost/cover.png"/>
 </p>
 
@@ -51,7 +51,7 @@ The cost of an individual *Asset* is the summation of its Resource Allocation Co
 
 **NOTE**: Resource Allocation Costs and Resource Usage Costs are summed for all assets when calculating Total Cluster Costs.
 
-<p align="center">
+<p style="text-align: center;">
   <img src="../img/monitoring-kubernetes-costs-with-kubecost/img-0.png"/>
 </p>
 
@@ -63,7 +63,7 @@ From here, we differentiate between Workload Costs and Cluster Idle Costs:
 | Total Cluster Costs |  =  | Workload Costs |  +  | Cluster Idle Costs |  +  | Cluster Overhead Costs |
 | :-----------------: | :-: | :------------: | :-: | :----------------: | :-: | :--------------------: |
 
-<p align="center">
+<p style="text-align: center;">
   <img src="../img/monitoring-kubernetes-costs-with-kubecost/img-1.png"/>
 </p>
 
@@ -77,7 +77,7 @@ Likewise, Cluster Idle Costs can be calculated as:
 | Cluster Idle Costs |  =  | Cluster Asset Costs |  –  | Workload Costs |
 | :----------------: | :-: | :-----------------: | :-: | :------------: |
 
-<p align="center">
+<p style="text-align: center;">
   <img src="../img/monitoring-kubernetes-costs-with-kubecost/img-2.png"/>
 </p>
 
