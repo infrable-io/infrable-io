@@ -14,7 +14,7 @@ weight: 1
 
 Do you know how much your Kubernetes workloads cost? If you answered "No", do not be dismayed. Based on a [2021 CNCF survey](https://www.cncf.io/wp-content/uploads/2021/06/FINOPS_Kubernetes_Report.pdf), 44% of respondents rely on monthly estimates, while 24% do not monitor Kubernetes spending at all. This, combined with the fact that 68% of respondents reported their Kubernetes-related costs had grown in the past year, has exposed a need for better cost monitoring of applications running on Kubernetes.
 
-Though solutions exist for calculating costs in aggregate (AWS Cost Explorer, GCP Cost Tools, etc), most companies want finer-grained visibility into the cost distribution of Kubernetes workloads. The open source cost monitoring tool, [Kubecost](https://www.kubecost.com), provides a solution and has seen a steady rise in popularity (13% of respondents currently use Kubecost) due to its ability to accurately report costs at the Kubernetes resource level.
+Though solutions exist for calculating costs in aggregate (AWS Cost Explorer, GCP Cost Tools, etc.), most companies want fine-grained visibility into the cost distribution of Kubernetes workloads. The open source cost monitoring tool, [Kubecost](https://www.kubecost.com), provides a solution and has seen a steady rise in popularity (13% of respondents currently use Kubecost) due to its ability to accurately report costs at the Kubernetes resource level.
 
 ## Kubecost
 
@@ -89,11 +89,11 @@ For the full specification, see the [OpenCost Specification](https://github.com/
 
 The OpenCost implementation is the cost allocation engine originally built by Kubecost. This implementation is actively used in all versions of Kubecost for building a cost allocation model.
 
-It should be noted, that both Kubecost and OpenCost can be used freely under certain conditions. See the Kubecost [product comparison](https://docs.kubecost.com/general/opencost-product-comparison) documentation for more details.
+It should be noted that both Kubecost and OpenCost can be used freely under certain conditions. See the Kubecost [product comparison](https://docs.kubecost.com/general/opencost-product-comparison) documentation for more details.
 
 ## Cost Reduction with Kubecost
 
-Kubecost can provide insights into overspend by allowing the actual cost of running a Kubernetes workload to be compared with the cost of its hosted tenants. For example, let's say I am renting a 10-bedroom, 10,000 sq. ft. mansion for me and my pet iguana, Iggy. If I have my own room and Iggy has his own room, there are still 8 other bedrooms left vacant for which I am still paying. This is classic case of overspend. The remaining 8 bedrooms are considered *idle* costs of maintaining my profligate lifestyle. Likewise, an overprovisioned cluster will have high idle costs. As idle percentage of a cluster increases, the efficiency decreases, representing a cost saving opportunity. Iggy and I would suffice with a 1-bedroom, 500 sq. ft. studio apartment. Similarly, an overprovisioned Kubernetes cluster would suffice with a smaller node instance.
+Kubecost can provide insights into overspend by allowing the actual cost of running a Kubernetes workload to be compared with the cost of its hosted tenants. For example, let's say I am renting a 10-bedroom, 10,000 sq. ft. mansion for me and my pet iguana, Iggy. If I have my own room and Iggy has his own room, there are still 8 other bedrooms left vacant for which I am still paying. This is a classic case of overspend. The remaining 8 bedrooms are considered *idle* costs of maintaining my profligate lifestyle. Likewise, an overprovisioned cluster will have high idle costs. As the idle percentage of a cluster increases, the efficiency decreases, representing a cost savings opportunity. Iggy and I would suffice with a 1-bedroom, 500 sq. ft. studio apartment. Similarly, an overprovisioned Kubernetes cluster would suffice with a smaller node instance.
 
 ## OpenCost Installation
 
