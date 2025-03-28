@@ -72,13 +72,13 @@
 
       Source: https://gohugo.io/hugo-pipes/scss-sass
     -->
-    {{ if .Site.IsServer }}
+    {{ if hugo.IsServer }}
     {{ $sassTemplate := resources.Get "scss/style.scss" }}
-    {{ $style := $sassTemplate | resources.ExecuteAsTemplate "style.scss" . | resources.ToCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
+    {{ $style := $sassTemplate | resources.ExecuteAsTemplate "style.scss" . | css.Sass (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
     <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
     {{ else }}
     {{ $sassTemplate := resources.Get "scss/style.scss" }}
-    {{ $style := $sassTemplate | resources.ExecuteAsTemplate "style.scss" . | resources.ToCSS (dict "targetPath" "css/style.css" "enableSourceMap" false ) }}
+    {{ $style := $sassTemplate | resources.ExecuteAsTemplate "style.scss" . | css.Sass (dict "targetPath" "css/style.css" "enableSourceMap" false ) }}
     <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
     {{ end }}
 
@@ -146,7 +146,7 @@
         * https://gohugo.io/hugo-pipes/fingerprint
     -->
     {{ $js := resources.Get "js/main.js" }}
-    {{ if .Site.IsServer }}
+    {{ if hugo.IsServer }}
     <script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
     {{ else }}
     {{ $min_js := $js | resources.Minify }}
