@@ -90,12 +90,12 @@ name = 'Contact'
 pageRef = '/contact'
 weight = 60
 
-[[menu.footer]]
+[[menus.footer]]
 name = 'Home'
 pageRef = '/'
 weight = 10
 
-[[menu.footer]]
+[[menus.footer]]
 name = 'Contact'
 pageRef = '/contact'
 weight = 20
