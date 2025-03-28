@@ -12,21 +12,10 @@
 
   NOTE: When using Google Analytics v4, use _internal/google_analytics.html.
 
-  NOTE: The following can be used as well:
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.GoogleAnalytics }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', '{{ .Site.GoogleAnalytics }}');
-    </script>
-
   Documentation:
     * https://gohugo.io/templates/internal/#google-analytics
 -->
 <!-- Do not use Google Analytics during local development -->
-{{ if not .Site.IsServer }}
+{{ if not hugo.IsServer }}
 {{ template "_internal/google_analytics.html" . }}
 {{ end }}
