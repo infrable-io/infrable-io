@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # DESCRIPTION
-# Publish content to Infrable.io.
+# Publish content to infrable.io.
 #
 # USAGE
 #
@@ -26,7 +26,7 @@ popd >/dev/null || exit
 pushd "$(pwd)/site" >/dev/null || exit
 
 # Remove static files
-rm -rf "$(pwd)/public"
+rm -rf "${PWD}/public"
 
 # Build static files
 hugo
