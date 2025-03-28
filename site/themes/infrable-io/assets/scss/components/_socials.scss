@@ -1,0 +1,21 @@
+// ----------------------------------------------------------------------------
+// _socials.scss (assets/scss/components/_socials.scss)
+//
+// Style for the following:
+//   * socials.html (layouts/partials/socials.html)
+// ----------------------------------------------------------------------------
+
+.socials {
+  display: block;
+
+  a {
+    color: $white;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

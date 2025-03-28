@@ -1,0 +1,20 @@
+<!--
+  socials.html (layouts/partials/socials.html)
+
+  Partial template for social links.
+
+  Style:
+    * assets/scss/components/_socials.scss
+
+  Data:
+    * data/socials.yaml
+-->
+{{ if .Site.Data.socials }}
+<div class="socials">
+  {{ range .Site.Data.socials }}
+  <a target="_blank" rel="noreferrer" href="{{ .url }}" alt="{{ .name }}" title="{{ .name }}" aria-label="{{ .name }}">
+    <i class="{{ .icon }}" aria-hidden="true" /></i>
+  </a>
+  {{ end }}
+</div>
+{{ end }}

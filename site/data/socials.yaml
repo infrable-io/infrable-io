@@ -1,0 +1,25 @@
+###############################################################################
+# socials.yaml (site/data/socials.yaml)
+#
+# Required:
+#   * name: Name of social site
+#   * icon: Icon for social site (Font Awesome)
+#   * url: URL for social site
+#
+# See: https://fontawesome.com/search for icon classes.
+###############################################################################
+- name: "GitHub"
+  icon: "fa-brands fa-github"
+  url: "https://github.com/infrable-io"
+
+- name: "LinkedIn"
+  icon: "fa-brands fa-linkedin"
+  url: "https://www.linkedin.com/company/infrable-io"
+
+- name: "Instagram"
+  icon: "fa-brands fa-instagram"
+  url: "https://www.instagram.com/infrable_io"
+
+- name: "X"
+  icon: "fa-brands fa-x-twitter"
+  url: "https://x.com/infrable_io"
