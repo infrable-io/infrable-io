@@ -1,99 +1,101 @@
 ###############################################################################
-# config.toml
+# hugo.toml
 #
 # Hugo configuration file.
 #
 # See the following for documentation:
-#   * https://gohugo.io/getting-started/configuration
+#   * https://gohugo.io/configuration/all/
 ###############################################################################
 
-baseURL = "https://infrable.io"
-languageCode = "en-us"
-title = "Infrable"
-
-theme = "infrable-io"
+baseURL = 'https://infrable.io'
+languageCode = 'en-us'
+title = 'Infrable'
+theme = 'infrable-io'
 
 # Google Analytics measurement ID (Google Analytics 4)
-googleAnalytics = "G-P75FQ2SHGT"
+[services]
+  [services.googleAnalytics]
+    id = 'G-P75FQ2SHGT'
 
-[module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.55.0"
+[markup]
+  [markup.highlight]
+  codeFences = true
+  guessSyntax = false
+  highlight = true
+  # See: https://xyproto.github.io/splash/docs/
+  style = 'gruvbox'
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+    taskList = false
+    typographer = false
+    [markup.goldmark.renderer]
+    unsafe = true
 
 [params]
-
   [params.home]
-    show_contact_box = true
-    show_contact_button = true
-    show_services_button = true
+  show_contact_box = true
+  show_contact_button = true
+  show_services_button = true
 
   # The following can be used to display a different logo on mobile and desktop
   # devices.
   [params.logo]
-    mobile = "images/logo/logo-mobile.png"
-    mobile_height = "50px"
-    desktop = "images/logo/logo-desktop.png"
-    desktop_height = "50px"
-    alt = "Infrable - Your Infrastructure As Code"
+  mobile = 'images/logo/logo-mobile.png'
+  mobile_height = '50px'
+  desktop = 'images/logo/logo-desktop.png'
+  desktop_height = '50px'
+  alt = 'Infrable - Your Infrastructure As Code'
 
   [params.seo]
-    meta_description = "Your Infrastructure As Code"
-    meta_og_description = "Your Infrastructure As Code"
-    meta_og_image = "images/logo/logo-desktop.png"
-    meta_og_site_name = "Infrable"
-    meta_og_title = "Infrable - Your Infrastructure As Code"
-    meta_twitter_creator = "@infrable_io"
-    meta_twitter_description = "Your Infrastructure As Code"
-    meta_twitter_image = "images/logo/logo-desktop.png"
-    meta_twitter_site = "@infrable_io"
-    meta_twitter_title = "Infrable - Your Infrastructure As Code"
+  meta_og_title = 'Infrable'
+  meta_og_description = 'Your Infrastructure As Code'
+  meta_og_site_name = 'Infrable'
+  meta_og_image = 'images/logo/logo-desktop.png'
+  meta_twitter_title = 'Infrable'
+  meta_twitter_description = 'Your Infrastructure As Code'
+  meta_twitter_site = '@infrable_io'
+  meta_twitter_creator = '@infrable_io'
+  meta_twitter_image = 'images/logo/logo-desktop.png'
 
   [params.footer]
-    copyright_text = "Infrable - Your Infrastructure As Code"
+  copyright_text = 'Infrable - Your Infrastructure As Code'
 
-[menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-      weight = 1
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
 
-  [[menu.main]]
-    name = "Services"
-    url = "/services/"
-      weight = 2
+[[menus.main]]
+name = 'Services'
+pageRef = '/services'
+weight = 20
 
-  [[menu.main]]
-      name = "Team"
-      url = "/team/"
-      weight = 3
+[[menus.main]]
+name = 'Team'
+pageRef = '/team'
+weight = 30
 
-  [[menu.main]]
-      name = "About"
-      url = "/about/"
-      weight = 4
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 40
 
-  [[menu.main]]
-      name = "Blog"
-      url = "/blog/"
-      weight = 5
+[[menus.main]]
+name = 'Blog'
+pageRef = '/blog'
+weight = 50
 
-  [[menu.main]]
-      name = "Contact"
-      url = "/contact/"
-      weight = 6
+[[menus.main]]
+name = 'Contact'
+pageRef = '/contact'
+weight = 60
 
-  [[menu.footer]]
-    name = "Home"
-    url = "/"
-      weight = 1
+[[menu.footer]]
+name = 'Home'
+pageRef = '/'
+weight = 10
 
-  [[menu.footer]]
-    name = "Contact"
-    url = "/contact/"
-      weight = 2
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[[menu.footer]]
+name = 'Contact'
+pageRef = '/contact'
+weight = 20
