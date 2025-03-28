@@ -7,16 +7,14 @@
 #   * https://github.com/gohugoio/hugoThemes#themetoml
 ###############################################################################
 
-name = "infrable-io"
-license = "MIT"
-licenselink = "https://github.com/infrable-io/infrable-io/blob/master/site/themes/infrable-io/LICENSE"
-description = "A theme for Infrable.io"
-homepage = "https://github.com/infrable-io/infrable-io/tree/master/site/themes/infrable-io"
-demosite = "https://infrable.io"
-tags = []
-features = []
-min_version = "0.55.0"
+name = 'infrable-io'
+license = 'MIT'
+licenselink = 'https://github.com/infrable-io/infrable-io/blob/master/LICENSE'
+description = 'A Hugo theme for infrable.io'
+
+homepage = 'https://github.com/infrable-io/infrable-io'
+demosite = 'https://infrable.io'
 
 [author]
-  name = "Infrable"
-  homepage = "https://infrable.io"
+  name = 'Infrable'
+  homepage = 'https://infrable.io'
