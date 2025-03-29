@@ -1,8 +1,8 @@
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-featured: true
-draft: false
-weight: 100
----
-
++++
+title = '{{ replace .Name '-' ' ' | title }}'
+date = {{ .Date }}
+description = ''
+featured = true
+draft = false
+weight = 1
++++
