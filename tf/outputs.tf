@@ -1,3 +1,6 @@
+# -----------------------------------------------------------------------------
+# OUTPUTS
+# -----------------------------------------------------------------------------
 output "s3_root_id" {
   value       = module.terraform_aws_static_website.s3_root_id
   description = "The name of the root S3 bucket"
