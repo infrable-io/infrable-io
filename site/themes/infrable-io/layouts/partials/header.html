@@ -13,7 +13,8 @@
         <img
           alt="{{ .Site.Params.logo.alt }}"
           height="{{ .Site.Params.logo.desktop_height }}"
-          src="{{ .Site.Params.logo.desktop | relURL }}"/>
+          src="{{ .Site.Params.logo.desktop | relURL }}"
+        />
       </a>
     </div>
     <div class="logo-mobile">
@@ -21,7 +22,8 @@
         <img
           alt="{{ .Site.Params.logo.alt }}"
           height="{{ .Site.Params.logo.mobile_height }}"
-          src="{{ .Site.Params.logo.mobile | relURL }}"/>
+          src="{{ .Site.Params.logo.mobile | relURL }}"
+        />
       </a>
     </div>
     {{ partial "main-menu.html" . }}

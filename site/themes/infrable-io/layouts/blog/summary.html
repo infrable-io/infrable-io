@@ -14,9 +14,7 @@
     <div class="blog-date">
       <time>{{ .Date.Format "January 2, 2006" }}</time>
     </div>
-    <div class="blog-author">
-      by {{ .Params.author }}
-    </div>
+    <div class="blog-author">by {{ .Params.author }}</div>
     <div class="blog-description">
       <p>{{ .Description | plainify | htmlUnescape }}</p>
     </div>
