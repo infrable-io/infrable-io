@@ -1,12 +1,12 @@
----
-title: "Monitoring Kubernetes Costs with Kubecost"
-date: 2023-01-03T00:00:00-06:00
-description: "How to monitor and reduce Kubernetes spend with Kubecost."
-author: Nickolas Kraus
-featured: true
-draft: false
-weight: 1
----
++++
+title = 'Monitoring Kubernetes Costs with Kubecost'
+date = 2023-01-03T00:00:00-06:00
+description = 'How to monitor and reduce Kubernetes spend with Kubecost.'
+author = 'Nickolas Kraus'
+featured = true
+draft = false
+weight = 1
++++
 
 <p style="text-align: center;">
   <img src="../img/monitoring-kubernetes-costs-with-kubecost/cover.png"/>
