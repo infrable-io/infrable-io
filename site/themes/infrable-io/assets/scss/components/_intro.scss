@@ -3,10 +3,6 @@
 //
 // Style for the following:
 //   * intro.html (layouts/partials/intro.html)
-//
-// For CSS and Sass documentation, see the following:
-//   * docs/css.md
-//   * docs/sass.md
 // ----------------------------------------------------------------------------
 
 .intro {
@@ -23,7 +19,6 @@
   }
 
   .container {
-
   }
 
   h1 {
@@ -80,7 +75,8 @@
   //   * https://getbootstrap.com/docs/5.0/layout/breakpoints
 
   // sm: small devices (landscape phones, 576px and up)
-  @include media-breakpoint-up(sm) {}
+  @include media-breakpoint-up(sm) {
+  }
 
   // md: medium devices (tablets, 768px and up)
   @include media-breakpoint-up(md) {

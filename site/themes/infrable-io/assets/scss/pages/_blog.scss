@@ -5,24 +5,18 @@
 //   * list.html (layouts/blog/single.html)
 //   * single.html (layouts/blog/single.html)
 //   * summary.html (layouts/blog/summary.html)
-//
-// For CSS and Sass documentation, see the following:
-//   * docs/css.md
-//   * docs/sass.md
 // ----------------------------------------------------------------------------
 
 // Variables
 $lighter: lighten($primary, 20%);
 
 .blog {
-
   p {
     color: $primary;
   }
 }
 
 .blog-single {
-
   .blog-date {
     color: $lighter;
     font-size: 14px;
@@ -39,7 +33,6 @@ $lighter: lighten($primary, 20%);
 }
 
 .blog-summary {
-
   .blog-title {
     margin-bottom: 15px;
   }

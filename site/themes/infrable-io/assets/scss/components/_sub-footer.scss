@@ -27,8 +27,9 @@
   }
 
   .copyright {
+    display: flex;
+    align-items: center;
     font-size: 14px;
-    margin-top: 10px;
 
     a {
       color: inherit;

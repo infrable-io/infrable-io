@@ -3,10 +3,6 @@
 //
 // Style for the following:
 //   * main-menu-mobile.html (layouts/partials/main-menu-mobile.html)
-//
-// For CSS and Sass documentation, see the following:
-//   * docs/css.md
-//   * docs/sass.md
 // ----------------------------------------------------------------------------
 
 .main-menu-mobile {
@@ -18,7 +14,10 @@
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  transition:
+    opacity 0.35s,
+    visibility 0.35s,
+    height 0.35s;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -71,7 +70,7 @@
       animation-delay: 0.35s;
 
       &:nth-of-type(2) {
-        animation-delay: 0.40s;
+        animation-delay: 0.4s;
       }
 
       &:nth-of-type(3) {
@@ -79,7 +78,7 @@
       }
 
       &:nth-of-type(4) {
-        animation-delay: 0.50s;
+        animation-delay: 0.5s;
       }
 
       &:nth-of-type(5) {
@@ -87,14 +86,13 @@
       }
 
       &:nth-of-type(6) {
-        animation-delay: 0.60s;
+        animation-delay: 0.6s;
       }
     }
   }
 }
 
 @keyframes fadeInRight {
-
   0% {
     opacity: 0;
     left: 20%;

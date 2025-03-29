@@ -3,10 +3,6 @@
 //
 // Style for the following:
 //   * main-menu.html (layouts/partials/main-menu.html)
-//
-// For CSS and Sass documentation, see the following:
-//   * docs/css.md
-//   * docs/sass.md
 // ----------------------------------------------------------------------------
 
 // On devices 768px and up (≥768px), show main menu.
@@ -45,7 +41,6 @@
       }
 
       &.active {
-
         > a {
           font-weight: bold;
           text-decoration: none;

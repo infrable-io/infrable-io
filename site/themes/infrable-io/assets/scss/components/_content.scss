@@ -1,13 +1,8 @@
 // ----------------------------------------------------------------------------
 // _content.scss (assets/scss/components/_content.scss)
-//
-// For CSS and Sass documentation, see the following:
-//   * docs/css.md
-//   * docs/sass.md
 // ----------------------------------------------------------------------------
 
 .content {
-
   a {
     text-decoration: underline;
   }
@@ -116,7 +111,7 @@
 
   blockquote {
     color: $tertiary;
-    border-left: .25em solid $quaternary;
+    border-left: 0.25em solid $quaternary;
     padding: 0 1em;
   }
 }
