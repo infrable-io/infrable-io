@@ -1,6 +1,16 @@
+###############################################################################
+# features.yaml (site/data/features.yaml)
+#
+# Features information for 'Home' page (layouts/index.html).
+#
+# Required:
+#   * title: Name of feature
+#   * image: Image for feature
+#   * description: Description for feature
+###############################################################################
 - title: "Infrastructure as Code"
   image: "images/features/iac.png"
-  description: "No magic. 100% of your infrastructure as code. Reuseable, grokable, simple."
+  description: "No magic. 100% of your infrastructure as code. Reusable, grokable, simple."
 
 - title: "Documented"
   image: "images/features/docs.png"

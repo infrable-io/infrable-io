@@ -1,6 +1,8 @@
 ###############################################################################
 # socials.yaml (site/data/socials.yaml)
 #
+# Social links for sub-footer (layouts/partials/sub-footer.html).
+#
 # Required:
 #   * name: Name of social site
 #   * icon: Icon for social site (Font Awesome)

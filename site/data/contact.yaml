@@ -1,10 +1,12 @@
 ###############################################################################
 # contact.yaml (site/data/contact.yaml)
 #
+# Contact information for 'Contact' page (layouts/page/contact.html).
+#
 # Optional:
-#   * email: Email to display
-#   * phone: Phone to display
+#   * email: Email address to display
+#   * phone: Phone number to display
 #   * call_button_link: Link for call to action button
 ###############################################################################
 email: "go@infrable.io"
-call_button_link: "contact"
+call_button_link: "contact/"
