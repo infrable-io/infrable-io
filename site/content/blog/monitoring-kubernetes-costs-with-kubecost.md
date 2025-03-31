@@ -37,7 +37,7 @@ OpenCost defines a methodology for accurately measuring and allocating the costs
 
 * **Total Cluster Costs**: All costs required to operate a Kubernetes cluster.
 * **Cluster Assets Costs**: Costs related to directly observable entities within a cluster (nodes, persistent volumes, etc.).
-* **Cluster Overhead Costs**: Costs required to operate all of the *Assets* of a cluster.
+* **Cluster Overhead Costs**: Costs required to operate all of the assets of a cluster.
 
 **Cluster Asset Costs** can be further segmented into **Resource Allocation Costs** and **Resource Usage Costs**.
 
@@ -47,7 +47,7 @@ OpenCost defines a methodology for accurately measuring and allocating the costs
 * **Resource Allocation Costs**: Costs that accumulate based on the amount of time provisioned irrespective of usage (e.g. CPU hourly rate).
 * **Resource Usage Costs**: Costs that accumulate on a per-unit basis (e.g. cost per byte egressed).
 
-The cost of an individual *Asset* is the summation of its Resource Allocation Costs and Resource Usage Costs.
+The cost of an individual asset is the summation of its Resource Allocation Costs and Resource Usage Costs.
 
 **NOTE**: Resource Allocation Costs and Resource Usage Costs are summed for all assets when calculating Total Cluster Costs.
 
