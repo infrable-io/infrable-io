@@ -1,0 +1,20 @@
+{{ define "main" }}
+<!--
+  single.html (layouts/products/single.html)
+
+  Single page template for products.
+
+  Style:
+    * assets/scss/pages/_products.scss
+-->
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="products products-single">
+        <h1 class="title">{{ .Title }}</h1>
+        <div class="content">{{ .Content }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

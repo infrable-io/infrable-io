@@ -1,0 +1,17 @@
+{{- /*
+Read the contents of a Markdown file.
+
+Removes the first line of the Markdown file if it starts with '#'.
+
+@context {string} path Path to the file.
+
+@example: {{< include-md "path/to/file" >}}
+*/}}
+{{ $path := .Get 0 }}
+{{ $content := readFile $path | safeHTML }}
+{{ $lines := split $content "\n" }}
+{{ $firstLine := index $lines 0 }}
+{{ if hasPrefix $firstLine "#" }}
+    {{ $content = delimit (after 1 $lines) "\n" }}
+{{ end }}
+{{ $content | markdownify }}

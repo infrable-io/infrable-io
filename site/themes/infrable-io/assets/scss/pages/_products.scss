@@ -1,0 +1,41 @@
+// ----------------------------------------------------------------------------
+// _products.scss (assets/scss/pages/_products.scss)
+//
+// Style for the following:
+//   * summary.html (layouts/products/summary.html)
+// ----------------------------------------------------------------------------
+
+.products-summary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .products-meta {
+    flex: 1 0 auto;
+
+    h2 {
+      font-size: 22px;
+      font-weight: normal;
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: $primary;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .products-icon {
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.products-summary {
+  background-color: $secondary;
+  border-radius: 10px;
+  padding: 30px;
+}

@@ -1,0 +1,23 @@
+<!--
+  summary.html (layouts/products/summary.html)
+
+  Summary view template for product summaries.
+
+  Style:
+    * assets/scss/pages/_products.scss
+-->
+<div class="products products-summary">
+  <div class="products-meta">
+    <h2 class="products-name">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h2>
+    <p class="products-description">{{ .Params.description }}</p>
+    {{ if .Params.github }}
+    <div class="products-icon">
+      <a target="_blank" rel="noreferrer" href="{{ .Params.github }}" alt="GitHub" title="GitHub" aria-label="GitHub">
+        <i class="fa-brands fa-github" aria-hidden="true" /></i>
+      </a>
+    </div>
+    {{ end }}
+  </div>
+</div>

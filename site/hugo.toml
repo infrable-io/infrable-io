@@ -74,29 +74,34 @@ pageRef = '/'
 weight = 10
 
 [[menus.main]]
+name = 'Products'
+pageRef = '/products'
+weight = 20
+
+[[menus.main]]
 name = 'Services'
 pageRef = '/services'
-weight = 20
+weight = 30
 
 [[menus.main]]
 name = 'Team'
 pageRef = '/team'
-weight = 30
+weight = 40
 
 [[menus.main]]
 name = 'About'
 pageRef = '/about'
-weight = 40
+weight = 50
 
 [[menus.main]]
 name = 'Blog'
 pageRef = '/blog'
-weight = 50
+weight = 60
 
 [[menus.main]]
 name = 'Contact'
 pageRef = '/contact'
-weight = 60
+weight = 70
 
 [[menus.footer]]
 name = 'Home'

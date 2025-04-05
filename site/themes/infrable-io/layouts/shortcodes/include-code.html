@@ -1,0 +1,12 @@
+{{- /*
+Read the contents of a file and apply syntax highlighting.
+
+@context {string} path Path to the file.
+@context {string} lang Language to be highlighted.
+
+@example: {{< include-code "path/to/file" "python" >}}
+*/}}
+{{ $path := .Get 0 }}
+{{ $lang := .Get 1 }}
+{{ $code := readFile $path | safeHTML }}
+{{ highlight $code $lang "" }}
