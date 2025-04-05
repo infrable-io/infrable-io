@@ -1,0 +1,6 @@
+[submodule "site/content/products/_products/cache"]
+	path = site/content/products/_products/cache
+	url = git@github.com:infrable-io/cache.git
+[submodule "site/content/products/_products/cache-backend"]
+	path = site/content/products/_products/cache-backend
+	url = git@github.com:infrable-io/cache-backend.git

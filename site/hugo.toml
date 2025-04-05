@@ -17,6 +17,14 @@ theme = 'infrable-io'
   [services.googleAnalytics]
     id = 'G-P75FQ2SHGT'
 
+[module]
+  [[module.mounts]]
+  excludeFiles = [
+    'products/_products',
+  ]
+  source = 'content'
+  target = 'content'
+
 [markup]
   [markup.highlight]
   codeFences = true
