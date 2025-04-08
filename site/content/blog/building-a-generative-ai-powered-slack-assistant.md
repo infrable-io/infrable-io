@@ -11,5 +11,5 @@ draft = false
 +++
 
 <p style="text-align: center;">
-  <img src="/images/blog/building-a-generative-ai-powered-slack-assistant.png"/>
+  <img src="/images/blog/building-a-generative-ai-powered-slack-assistant/cover.png"/>
 </p>
